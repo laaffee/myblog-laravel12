@@ -14,6 +14,7 @@ return [
     */
 
     'default' => env('FILESYSTEM_DISK', 'local'),
+    'default_public_disk' => env('PUBLIC_STORAGE_DISK', 'public'),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,6 +47,16 @@ return [
             'throw' => false,
             'report' => false,
         ],
+
+         'upload_disk' => [
+            'driver' => 'local',
+            'root' => base_path('../public_html/storage'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
+
 
         's3' => [
             'driver' => 's3',
