@@ -78,7 +78,7 @@
 
         <div>
             <img class="w-20 h-20 rounded-full"
-                src="{{ $user->avatar ? asset('storage/' . $user->avatar) : asset('img/default-avatar2.png') }}"
+                src="{{ 'storage/' . $user->avatar ? asset('storage/' . $user->avatar) : asset('img/default-avatar2.png') }}"
                 alt="{{ $user->name }}" id="avatar-preview">
         </div>
 

@@ -25,7 +25,7 @@
                         <div class="flex items-center px-5">
                             <div class="shrink-0">
                                 <img class="size-10 rounded-full"
-                                    src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
+                                    src="{{ 'storage/' . Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
                                     alt="{{ Auth::user()->name }}" />
                             </div>
                             <button
@@ -92,7 +92,7 @@
             <div class="flex items-center px-5">
                 <div class="shrink-0">
                     <img class="size-10 rounded-full"
-                        src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
+                        src="{{ 'storage/' . Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
                         alt="{{ Auth::user()->name }}" />
                 </div>
                 <div class="px-4">

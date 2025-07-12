@@ -20,7 +20,7 @@
                     <address class="flex items-center mb-6 not-italic">
                         <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                             <img class="mr-4 w-16 h-16 rounded-full"
-                                src="{{ $post->author->avatar ? asset('storage/' . $post->author->avatar) : asset('img/default-avatar2.png') }}"
+                                src="{{ 'storage/' . $post->author->avatar ? asset('storage/' . $post->author->avatar) : asset('img/default-avatar2.png') }}"
                                 alt="{{ $post->author->name }}">
                             <div>
                                 <a href="/posts?author={{ $post->author->username }}" rel="author"

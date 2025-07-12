@@ -29,7 +29,7 @@
                                             <span class="absolute -inset-1.5"></span>
                                             <span class="sr-only">Open user menu</span>
                                             <img class="size-8 rounded-full"
-                                                src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
+                                                src="{{ 'storage/' . Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
                                                 alt="{{ Auth::user()->name }}" />
                                             <div class="ml-3 text-gray-300 text-sm font-medium">{{ Auth::user()->name }}
                                             </div>
@@ -112,7 +112,7 @@
                         <div class="flex items-center px-5">
                             <div class="shrink-0">
                                 <img class="size-10 rounded-full"
-                                     src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
+                                     src="{{ 'storage/' . Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : asset('img/default-avatar2.png') }}"
                                                 alt="{{ Auth::user()->name }}" />
                             </div>
                             <div class="ml-3">
